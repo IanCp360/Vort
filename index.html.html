@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vort - Restaurante Mexicano</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rockwell&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Rockwell', serif;
+            background-color: white;
+            color: #5a0d4a;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2, h3 {
+            color: #5a0d4a;
+        }
+
+        /* Estilos del header */
+        header {
+            background-color: #5a0d4a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #b34962;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            background-color: #73293d;
+            border-radius: 5px;
+        }
+
+        /* Estilos del contenido */
+        .menu-section {
+            margin: 30px;
+        }
+        .menu-section img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .menu-item div {
+            margin-left: 20px;
+        }
+        .menu-item h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .form-section {
+            margin: 30px;
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .form-section h2 {
+            margin-bottom: 20px;
+        }
+        .form-section input, .form-section textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Restaurante Vort</h1>
+        <p>Sabores auténticos de México</p>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <a href="#platillos">Platillos</a>
+        <a href="#bebidas">Bebidas</a>
+        <a href="#postres">Postres</a>
+        <a href="#formulario">Formulario</a>
+    </nav>
+
+    <!-- Platillos Mexicanos -->
+    <section id="platillos" class="menu-section">
+        <h2>Platillos Mexicanos</h2>
+        <div class="menu-item">
+            <img src="Mole.JPEG" alt="Mole Poblano">
+            <div>
+                <h3>Mole Poblano</h3>
+                <p>Un platillo tradicional con un rico adobo de chiles y chocolate, servido con pollo o pavo.</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="Birria.JPEG" alt="Tacos de Birria">
+            <div>
+                <h3>Tacos de Birria</h3>
+                <p>Deliciosos tacos rellenos de carne de res guisada, acompañados de su consomé.</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="Chalupas.JPEG" alt="Chalupas">
+            <div>
+                <h3>Chalupas</h3>
+                <p>Pequeñas tortillas fritas cubiertas con salsa, carne y crema.</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="tacos.JPEG" alt="Tacos al Pastor">
+            <div>
+                <h3>Tacos al Pastor</h3>
+                <p>El tradicional taco con carne de cerdo adobada y piña, servido en tortillas de maíz.</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="CHANCLAS.JPEG" alt="Chanclas">
+            <div>
+                <h3>Chanclas</h3>
+                <p>Tacos especiales con carne de cerdo o pollo, servidos con salsa de chile morita.</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="MOLOTES.JPEG" alt="Molotes">
+            <div>
+                <h3>Molotes</h3>
+                <p>Deliciosos antojitos rellenos de frijoles o carne, fritos hasta dorarse.</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="pozole.JPEG" alt="Pozole">
+            <div>
+                <h3>Pozole</h3>
+                <p>Una sopa espesa a base de maíz hominy, acompañada de carne y condimentos.</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="PAMBAZO.JPEG" alt="Pambazos">
+            <div>
+                <h3>Pambazos</h3>
+                <p>Pan relleno de papa, carne y salsa, frito y servido con crema y lechuga.</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="Pelonas.JPEG" alt="Pelonas">
+            <div>
+                <h3>Pelonas</h3>
+                <p>Tortillas gruesas rellenas de carne, frijoles y salsa.</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="flautas.JPEG" alt="Flautas">
+            <div>
+                <h3>Flautas</h3>
+                <p>Deliciosas tortillas rellenas de carne y fritas, acompañadas de crema y guacamole.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bebidas -->
+    <section id="bebidas" class="menu-section">
+        <h2>Bebidas</h2>
+        <div class="menu-item">
+            <img src="1.JPEG" alt="Agua de Horchata">
+            <div>
+                <h3>Agua de Horchata</h3>
+                <p>Una refrescante bebida a base de arroz, canela y vainilla.</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="2.JPEG" alt="Agua de Guanabana">
+            <div>
+                <h3>Agua de Guanabana</h3>
+                <p>Deliciosa agua de guanabana, con un toque dulce y refrescante.</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="3.JPEG" alt="Agua de Jamaica">
+            <div>
+                <h3>Agua de Jamaica</h3>
+                <p>Una bebida fresca y agria a base de flores de jamaica.</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="4.JPEG" alt="Agua de Limón con Pepino">
+            <div>
+                <h3>Agua de Limón con Pepino</h3>
+                <p>Un toque cítrico con la frescura del pepino, ideal para el calor.</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="5.JPEG" alt="Agua de Maracuyá">
+            <div>
+                <h3>Agua de Maracuyá</h3>
+                <p>Refrescante bebida hecha con la pulpa de la fruta de la pasión.</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="6.JPEG" alt="Naranjada">
+            <div>
+                <h3>Naranjada</h3>
+                <p>El jugo natural de naranja, fresco y dulce.</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="7.JPEG" alt="Limonada de Rosas">
+            <div>
+                <h3>Limonada de Rosas</h3>
+                <p>Una limonada con un toque de agua de rosas, suave y aromática.</p>
+           
+        </div>
+        </div>
+        <div class="menu-item">
+            <img src="8.JPEG" alt="Horchata de Coco">
+            <div>
+                <h3>Horchata de Coco</h3>
+                <p>Un giro tropical a la clásica horchata, con un toque de coco cremoso.</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="9.JPEG" alt="Agua de Piña">
+            <div>
+                <h3>Agua de Piña</h3>
+                <p>Una bebida refrescante a base de piña natural, perfecta para cualquier ocasión.</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="10.JPEG" alt="Agua de Melón">
+            <div>
+                <h3>Agua de Melón</h3>
+                <p>Una bebida ligera y dulce hecha con melón fresco.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Postres -->
+    <section id="postres" class="menu-section">
+        <h2>Postres</h2>
+        <div class="menu-item">
+            <img src="11.JPEG" alt="Arroz con Leche">
+            <div>
+                <h3>Arroz con Leche</h3>
+                <p>Un clásico postre mexicano, cremoso y reconfortante con canela y vainilla.</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="12.JPEG" alt="Flan">
+            <div>
+                <h3>Flan</h3>
+                <p>Un suave y delicioso flan de huevo, bañado en un caramelo dulce.</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="13.JPEG" alt="Brownie con Helado">
+            <div>
+                <h3>Brownie con Helado</h3>
+                <p>Un brownie de chocolate acompañado de una bola de helado de vainilla.</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="14.JPEG" alt="Concha Rellena">
+            <div>
+                <h3>Concha Rellena</h3>
+                <p>Pan dulce con un relleno de crema pastelera, una deliciosa combinación.</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="15.JPEG" alt="Plátano Frito">
+            <div>
+                <h3>Plátano Frito</h3>
+                <p>Plátanos fritos acompañados de crema y miel, un postre cálido y delicioso.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario (para más adelante) -->
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Satisfacción - Restaurante Vort</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Formulario de Satisfacción</h1>
+    <p>Ayúdanos a mejorar tu experiencia</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="platillos.html">Platillos</a>
+    <a href="bebidas.html">Bebidas</a>
+    <a href="postres.html">Postres</a>
+  </nav>
+
+  <section class="form-section">
+    <form action="https://formspree.io/f/xrbanbgb" method="POST">
+
+      <label for="email">Tu correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <hr>
+
+      <h3>1. ¿Cómo calificarías la calidad de la comida?</h3>
+      <select name="calidad_comida" required>
+        <option value="">Seleccione</option>
+        <option value="Excelente">Excelente</option>
+        <option value="Buena">Buena</option>
+        <option value="Regular">Regular</option>
+        <option value="Mala">Mala</option>
+      </select>
+
+      <h3>2. ¿Cómo fue la atención del personal?</h3>
+      <select name="atencion_personal" required>
+        <option value="">Seleccione</option>
+        <option value="Excelente">Excelente</option>
+        <option value="Buena">Buena</option>
+        <option value="Regular">Regular</option>
+        <option value="Mala">Mala</option>
+      </select>
+
+      <h3>3. ¿El tiempo de espera fue adecuado?</h3>
+      <select name="tiempo_espera" required>
+        <option value="">Seleccione</option>
+        <option value="Muy rápido">Muy rápido</option>
+        <option value="Adecuado">Adecuado</option>
+        <option value="Lento">Lento</option>
+        <option value="Muy lento">Muy lento</option>
+      </select>
+
+      <h3>4. ¿Cómo calificarías la limpieza del lugar?</h3>
+      <select name="limpieza" required>
+        <option value="">Seleccione</option>
+        <option value="Muy limpia">Muy limpia</option>
+        <option value="Limpia">Limpia</option>
+        <option value="Regular">Regular</option>
+        <option value="Sucio">Sucio</option>
+      </select>
+
+      <h3>5. ¿El menú fue fácil de entender?</h3>
+      <label><input type="radio" name="facilidad_menu" value="Sí" required> Sí</label>
+      <label><input type="radio" name="facilidad_menu" value="No"> No</label>
+
+      <h3>6. ¿Encontraste opciones suficientes en el menú?</h3>
+      <label><input type="radio" name="opciones_menu" value="Sí" required> Sí</label>
+      <label><input type="radio" name="opciones_menu" value="No"> No</label>
+
+      <h3>7. ¿Recomendarías Vort a otras personas?</h3>
+      <label><input type="radio" name="recomendar" value="Sí" required> Sí</label>
+      <label><input type="radio" name="recomendar" value="No"> No</label>
+
+      <h3>8. ¿Qué tan satisfecho estás en general con tu visita?</h3>
+      <select name="satisfaccion_general" required>
+        <option value="">Seleccione</option>
+        <option value="Muy satisfecho">Muy satisfecho</option>
+        <option value="Satisfecho">Satisfecho</option>
+        <option value="Insatisfecho">Insatisfecho</option>
+        <option value="Muy insatisfecho">Muy insatisfecho</option>
+      </select>
+
+      <h3>9. ¿Cómo te enteraste de nosotros?</h3>
+      <select name="origen_conocido" required>
+        <option value="">Seleccione</option>
+        <option value="Recomendación">Recomendación</option>
+        <option value="Redes Sociales">Redes Sociales</option>
+        <option value="Publicidad">Publicidad</option>
+        <option value="Otro">Otro</option>
+      </select>
+
+      <h3>10. ¿Tienes algún comentario o sugerencia adicional?</h3>
+      <textarea name="mensaje" rows="4" placeholder="Tu mensaje..."></textarea>
+
+      <br><br>
+      <button type="submit">Enviar</button>
+
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Restaurante Vort. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
+
+
+    <!-- Footer -->
+    <footer>
+        <p style="text-align: center; padding: 20px; background-color: #5a0d4a; color: white;">&copy; 2025 Restaurante Vort. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
